@@ -1,0 +1,91 @@
+:root {
+  --color-primary: #D2B48C; /* Tan Beige */
+  --color-nav: #3E2723; /* Dark Walnut */
+  --color-accent: #8B5E3C; /* Warm Chestnut */
+  --color-text: #4B3832; /* Coffee Brown */
+  --color-card: #B38B6D; /* Soft Taupe */
+  --color-light: #FFF5E1; /* Cream */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Base button styles */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--color-nav);
+  color: var(--color-light);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-nav);
+  border: 2px solid var(--color-nav);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-nav);
+  color: var(--color-light);
+}
+
+/* Sections */
+section {
+  padding: 6rem 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--color-nav);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}

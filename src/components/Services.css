@@ -1,0 +1,45 @@
+.services {
+  background-color: var(--color-light);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background-color: var(--color-card);
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(62, 39, 35, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.service-icon {
+  color: var(--color-accent);
+  background-color: rgba(255, 245, 225, 0.5); /* Semi-transparent Cream */
+  padding: 1.5rem;
+  border-radius: 50%;
+  display: inline-flex;
+  margin-bottom: 1rem;
+}
+
+.service-title {
+  color: var(--color-nav);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
